@@ -16,7 +16,7 @@ const Products = () => {
       {
         products.map(product => (
           <Link href={`/product/${product.id}`}>
-            <article>
+            <article key={product.id}>
             <Image
             src={product.img}
             width={150}
@@ -57,7 +57,7 @@ const Categories = () => {
       <div>
         {
           categories.map(category => (
-            <article>
+            <article key={category}>
               <h3>{category}</h3>
             </article>
           ))
