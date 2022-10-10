@@ -37,7 +37,7 @@ const Cart = () => {
         <Container>
             <div>
                 {cartProd.map(product => (
-                    <div>
+                    <div key={product.id}>
                         <h4>{product.title}</h4>
                         
                     </div>

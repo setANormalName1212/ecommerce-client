@@ -15,8 +15,8 @@ const Products = () => {
     <section className={styles.products}>
       {
         products.map(product => (
-          <Link href={`/product/${product.id}`}>
-            <article key={product.id}>
+          <Link href={`/product/${product.id}`}  key={product.id}>
+            <article>
             <Image
             src={product.img}
             width={150}
@@ -39,7 +39,7 @@ const Info = () => {
     <section className={styles.info}>
       {
         info.map(res => (
-          <article>
+          <article key={res.title}>
             {res.icon}
             <h3>{res.title}</h3>
             <p>{res.description}</p>
