@@ -1,0 +1,12 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: ghostwhite;
+    background-repeat: no-repeat;
+    background: rgb(74,170,241);
+background: linear-gradient(90deg, rgba(74,170,241,1) 0%, rgba(222,115,194,1) 44%, rgba(235,74,112,1) 100%);
+}
+
+img {
+    border-radius: 6px;
+}

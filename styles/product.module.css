@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+.product {
+    display: block;
+    margin: 5em auto;
+    max-width: fit-content;
+    background-color: red;
+    padding: .5em;
+    background: rgba(93, 189, 219, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    font-family: 'Work Sans';
+}
+
+.img {
+    border-radius: 6px;
+}
+
+.product > h3 {
+    max-width: fit-content;
+    padding: .25em .5em;
+    margin: .5em auto;
+}
+
+.product > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 .5em;
+}
+
+.product > div > svg {
+    font-size: 1.25em;
+    padding: .5em;
+    transition: .5s;
+    border-radius: 6px;
+}
+
+.product > div > svg:hover {
+    background-color: ghostwhite;
+    color: rgb(0, 9, 75);
+    border-radius: 6px;
+    padding: .5em;
+}

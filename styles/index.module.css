@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 6em 0;
+}
+
+.products > article {
+  font-family: 'Work Sans';
+  max-width: 150px;
+  padding: .5em;
+  transition: .4s;
+  border-radius: 4px;
+  color: ghostwhite;
+  /* From https://css.glass */
+background: rgba(93, 189, 219, 0.12);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.6px);
+-webkit-backdrop-filter: blur(6.6px);
+}
+
+.products > article:hover {
+  box-shadow: 0 0px 100px pink;
+  border-radius: 4px;
+  transform: translate(0px, -15px);
+}
+
+.products > article > div > p {
+  font-size: 1em;
+  text-align: center;
+}
+
+
+
+.categories {
+  padding: 2em;
+  /* From https://css.glass */
+background: rgba(93, 189, 219, 0.31);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.6px);
+-webkit-backdrop-filter: blur(5.6px);
+}
+
+.categories > h2 {
+  font-family: 'Ubuntu';
+  text-align: center;
+  text-decoration: underline;
+}
+
+.categories > div {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Montserrat';
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.categories > div > article {
+  padding: .5em;
+  margin: 2em;
+  margin-right: 1em;
+  text-align: center;
+  border: 1px solid rgb(0, 9, 75);
+  background-color: aliceblue;
+  transition: .6s;
+  color: black;
+}
+
+.categories > div > article:hover {
+  border-radius: 4px;
+  box-shadow: 0px 10px 20px black;
+  color: black;
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.info {
+  padding: 3em 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Ubuntu';
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background: rgba(93, 189, 219, 0.31);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.6px);
+-webkit-backdrop-filter: blur(5.6px);
+}
+
+.info > article {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid ghostwhite;
+  border-radius: 8px;
+}
+
+.info > article > h3 {
+  text-align: center;
+}
+
+.info > article > p {
+  text-align: justify;
+}
+
+.info > article > svg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 2em;
+}

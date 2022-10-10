@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+.footer {
+    background-color: #ff6489;
+    padding: 1em;
+    font-family: 'Silkscreen';
+}
+
+.footer > svg {
+    font-size: 3em;
+    width: 100%;
+    align-items: center;
+}
+
+.footer > h2 {
+    text-align: center;
+}
